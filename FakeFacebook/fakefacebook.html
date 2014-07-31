@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href = "fakefacebook.css" rel = "stylesheet">
+		<script type = "text/javascript">
+
+			function no(){
+				confirm("What makes you think this is gonna work? Does this look like a real site to you, bitch?")
+			}
+
+		</script>
+	</head>
+	<body>
+		<div id = "wrapper">
+			<div id = "topcontainer">
+				<div id = "logo">facebook</div>
+			</div>
+
+			<div id = "statuscontainer" class = "box">
+
+				<!--Box with "update status"-->
+				<div id = "updatestatus" class = "statuscontainer">
+					<div class = "verticalalign">Update Status</div>
+				</div>
+				<center> <hr width = "97%"> </center>
+
+				<!--BOX WITH ACTUAL STATUS -->
+				<div id = "insertstatus" class = "statuscontainer">
+					<form name = "statusform">
+						<textarea id = "tobeposted" placeholder = "What's on your mind?"></textarea>
+					</form>
+				</div>
+
+				<!--*BOX WITH POST BUTTON-->
+				<div id = "glyphbox" class = "statuscontainer">
+					<img src = "facebookglyphs.png" id = "images" onclick = "no()"">
+					<button type = "submit" id = "submit">Post</button>
+				</div>
+
+			</div>
+
+			<div id = "actualstatus" class = "box">
+			</div>
+
+
+
+		</div>
+	</body>
+</html>

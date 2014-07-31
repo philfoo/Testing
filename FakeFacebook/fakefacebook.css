@@ -1,0 +1,111 @@
+*{
+	margin: 0; padding: 0;
+}
+
+html{
+	overflow: scroll;
+	background-color: #e9eaed;
+}
+
+
+#wrapper{
+	border: 1px solid black;
+	height: 35em; width: 35em;
+	position: fixed;
+	margin-top: -17.5em; margin-left: -17.5em;
+	top:50%; left:50%;
+	background-color:inherit;
+}
+
+#topcontainer{
+	width: 35em; height:5em;
+	border: 1px solid black;
+	background-color:#3b5998;
+	position: absolute; top: 0;
+}
+
+#logo{
+
+	font-family:tahoma;
+	color:white;
+	/*border:1px solid black;*/
+	font-size:44px;
+	text-align:center;
+	position: absolute;
+	height:1.4em; width: 10em;
+	top:50%; left: 50%;
+	margin-top: -.7em; margin-left:-5em;
+}
+
+.verticalalign{
+	position: relative;
+	/*border:1px solid black;*/
+	margin-top:0.4em;
+	font-size:14px; font-family:Tahoma;
+	left:0.4em;
+}
+
+#statuscontainer{
+	position: absolute;
+	border: 1px solid black;
+	margin-top: 6em;
+	height:10em; width: 35em;
+	background-color:white
+}
+
+#actualstatus {
+	position: absolute;
+	bottom: 0;
+	height:18em; width: 35em;
+	border:1px solid black;
+	background-color:white;
+}
+
+#updatestatus{
+	top:0;
+	height: 1.5em; width: 35em;
+	border:1px solid red;
+	padding:0;
+	background-color:white
+}
+
+#insertstatus{
+	padding:0;
+	top: 2em;
+	height:5.5em; width:35em;
+	border:1px solid blue;
+}
+
+#glyphbox{
+	position:absolute;
+	bottom:0;
+	height: 2.3em; width:35em;
+	border:1px solid black;
+}
+
+.statuscontainer{
+
+}
+
+#tobeposted{
+	width:98%; height:5.9em;
+	position: absolute;
+	left:0.7%; margin-top: 0.3em;
+	outline:0; border: transparent;
+	font-family: tahoma;
+	font-size: 14px;
+}
+
+#submit{
+	width:11%; height:2.5em;
+	position:absolute;
+	left: 88%; margin-top:0.2em;
+	outline:0;
+	font-size:12px; font-family: tahoma; color:white;
+	background-color: #3b5998;
+}
+
+#images{
+	position:absolute;
+	left:2%; margin-top:0.2em;
+}
