@@ -1,8 +1,20 @@
+*{
+	margin: 0;
+}
+
+html{
+	overflow-y:scroll;
+}
+
 #centered{
 	height:40%; width: 40%;
 	position:fixed;
 	top:50%; left: 50%;
-	border-radius:1px solid black;
+	border:1px solid black;
+	margin-left: -20%; margin-top: -11%;
 }
 
-BOOBS
+p{
+	text-align:center;
+}
+

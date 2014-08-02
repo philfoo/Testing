@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href = "animationtest.css" rel = "stylesheet">
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type = "text/javascript">
+			$(document).ready(function(){
+				$(document).keydown(function(key){
+					switch(parseInt(key.which,10)){
+						case 37:
+							$("#centered").animate({left: "-=5px"},1);
+							break;
+						case 38:
+							$("#centered").animate({top: "-=5px"},1);
+							break;	
+						case 39: 
+							$("#centered").animate({left: "+=5px"},1);
+							break;
+						case 40:
+							$("#centered").animate({top: "+=5px"}, 1);
+							break;
+						default: break;
+						};
+				});
+			})
+
+
+
+
+
+
+
+
+
+		</script>
+	</head>
+	
+	<body>
+		<div id = "centered">
+			<p>Philip</p>
+
+
+		</div>
+
+	</body>
+</html>
