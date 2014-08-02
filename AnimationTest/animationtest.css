@@ -12,9 +12,56 @@ html{
 	top:50%; left: 50%;
 	border:1px solid black;
 	margin-left: -20%; margin-top: -11%;
+	/*Hide the box for now */
+	display:none;
 }
 
 p{
 	text-align:center;
+	position:relative;
+	top:50%;
 }
 
+#formbox{
+	position:fixed;
+	height:200px; width: 300px;
+	top: 50%; left: 50%;
+	margin-left: -150px; margin-top: -120px;
+	/*border:1px solid black;*/
+}
+
+#textcontainer{
+	position:absolute;
+	width:300px; height:120px;
+	/*border:1px solid black;*/
+}
+
+form{
+	position:absolute;
+	/*border:1px solid red;*/
+	left:50%; margin-left: -43.5%;
+	top: 135px; margin-top: 10px;
+}
+
+input[type = "text"]{
+	width:200px; height: 25px;
+	font-size:18px;
+	vertical-align:middle;
+}
+
+input[type = "button"]{
+	height:33px;
+	background-color: #1F7A99;
+	color:white;
+	cursor:pointer;
+	border-radius: 5px;
+	outline: white;
+	border: none;
+}
+
+#whatsyourname{
+	font-size: 40px;
+	text-align:center;
+	color: #1F7A99;
+	font-family: verdana;
+}
