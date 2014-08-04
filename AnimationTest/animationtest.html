@@ -5,7 +5,7 @@
 		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type = "text/javascript">
 			$(document).ready(function(){
-				/*$(document).keydown(function(key){
+				$(document).keydown(function(key){
 					switch(parseInt(key.which,10)){
 						case 37:
 							$("#centered").animate({left: "-=5px"},1);
@@ -21,7 +21,7 @@
 							break;
 						default: break;
 						};
-				});*/
+				});
 
 				$("#formbox").hide().fadeIn(2000);
 				function blink(){
@@ -36,10 +36,12 @@
 						clearInterval(blinker);
 				});
 
+				var name = "";
 				function getValue(){
 					if ($("input[type = 'text']").val().length > 0){
-						var name = $("input[type = 'text']").val();
+						name = $("input[type = 'text']").val().capitalize();
 						$("#formbox").animate({top: "-50%"}, 700).delay(700).hide(1);
+						displayName();
 					}
 					else {
 						$("input[type = 'text']").prop("placeholder", "Enter name to proceed")
@@ -51,7 +53,17 @@
 					if (key.which === 13){
 						getValue(); return false;
 					}
-				})
+				});
+
+				function displayName(){
+					$("#addhere").append("Hi " + name + "!")
+					$("#centered").delay(700).fadeIn(2000);
+					$("#addhere").animate({fontSize: "60px"}, 1500);
+				};
+
+				String.prototype.capitalize = function(){
+					return this.charAt(0).toUpperCase() + this.slice(1);
+				}
 	
 			});
 
@@ -67,7 +79,8 @@
 	
 	<body>
 		<div id = "centered">
-			<p>Phil</p>
+			<div id = "addhere">
+			</div>
 		</div>
 		<div id = "formbox">
 			<div id = "textcontainer">
