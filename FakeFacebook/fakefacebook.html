@@ -2,11 +2,23 @@
 <html>
 	<head>
 		<link href = "fakefacebook.css" rel = "stylesheet">
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type = "text/javascript">
 
 			function no(){
 				confirm("What makes you think this is gonna work? Does this look like a real site to you, bitch?")
 			}
+
+			$(document).ready(function(){
+				$("#wrapper").hide().fadeIn(2000);
+
+				$("#submit").click(function(){
+					$("<div id = 'actualstatus'></div>").hide().appendTo("#wrapper").fadeIn(1500);
+				});
+
+
+
+			})
 
 		</script>
 	</head>
@@ -33,14 +45,14 @@
 
 				<!--*BOX WITH POST BUTTON-->
 				<div id = "glyphbox" class = "statuscontainer">
-					<img src = "facebookglyphs.png" id = "images" onclick = "no()"">
-					<button type = "submit" id = "submit">Post</button>
+					<img src = "facebookglyphs.png" id = "images" onclick = "no()">
+					<input type = "button" id = "submit" value = "Post">
 				</div>
 
 			</div>
 
-			<div id = "actualstatus" class = "box">
-			</div>
+			<!-- <div id = "actualstatus" class = "box">
+			</div> -->
 
 
 
